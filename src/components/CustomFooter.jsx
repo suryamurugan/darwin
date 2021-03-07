@@ -41,7 +41,7 @@ const CustomFooter = ()=>{
                 <div className="socials">
                     <div></div>
                <div>
-               <p style={{color:"white"}}>FOLLOW US ON</p>
+               <p style={{color:"white",fontSize:"0.7rem"}}>FOLLOW US ON</p>
                 <div className="icons">
                     
                 <a
@@ -75,7 +75,7 @@ const CustomFooter = ()=>{
                     />
                 </a>
                 </div>
-                <p style={{color:"#ececec"}}>Copyright 2021. All rights reserved</p>
+                <p style={{color:"#ececec",fontSize:"0.7rem"}}>Copyright 2021. All rights reserved</p>
                </div>
              </div>
              </div>
