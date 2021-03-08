@@ -23,9 +23,20 @@ const CustomFooter2  = ()=>{
 }
 
 const CustomFooter = ()=>{
-    return(
+    return(<>
+    {/* <div>
+    <div classname="container" style={{position: "relative",width:" 200px",
+        height: "200px",margin: "20px"}}>
+        <div className="box" style={{background: "red", position: "absolute",top: 0,
+        left: 0, width: "100%",
+        height: "100%"   , opacity: 0.8   }}>knjnjns</div>
+        <div className="box stack-top" style={{background: "blue",zIndex: 9, margin: "20px"}}>cfcfv</div>
+    </div>
+    </div> */}
         <footer id="contact" >
+           
              <div className="contact-details">
+                 
                 <div className="company-stuff">
                     <div className="logo">
                         <img src={mainlogo} alt="" />
@@ -39,8 +50,8 @@ const CustomFooter = ()=>{
                     {/* <Link to="/careers">Careers</Link> */}
                 </div>
                 <div className="socials">
-                    <div></div>
-               <div>
+                    
+               <div style={{}}>
                <p style={{color:"white",fontSize:"0.7rem"}}>FOLLOW US ON</p>
                 <div className="icons">
                     
@@ -81,6 +92,7 @@ const CustomFooter = ()=>{
              </div>
 
         </footer>
+        </>
     )
 }
 export default CustomFooter

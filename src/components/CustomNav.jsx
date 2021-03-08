@@ -18,13 +18,16 @@ const CustomNav = ()=>{
      <Nav className="mr-auto"></Nav>
        
        
-         <Nav.Link activeClassName="active" href="/">About</Nav.Link>
-         <Nav.Link activeClassName="active" href="/brief">Brief</Nav.Link>
-         <Nav.Link activeClassName="active"href="#link">To Participate</Nav.Link>
-         <Nav.Link  activeClassName="active"href="/jury">Jury</Nav.Link>
-         <Nav.Link activeClassName="active"  href="#link">Schedule</Nav.Link>
-         <Nav.Link activeClassName="active" href="/prize">Prizes</Nav.Link>
-         <Button > Register Now </Button>
+         <Nav.Link style={{color:"#707070"}} activeClassName="active" href="/">About</Nav.Link>
+         <Nav.Link style={{color:"#707070"}} activeClassName="active" href="/brief">brief</Nav.Link>
+         <Nav.Link style={{color:"#707070"}} activeClassName="active"href="#link">To Participate</Nav.Link>
+         <Nav.Link  style={{color:"#707070"}} activeClassName="active"href="/jury">Jury</Nav.Link>
+         <Nav.Link  style={{color:"#707070"}}activeClassName="active"  href="#link">Schedule</Nav.Link>
+         <Nav.Link  style={{color:"#707070"}} activeClassName="active" href="/prize">Prizes</Nav.Link>
+         <div style={{marginRight:"20px",marginLeft:"20px"}}>
+           |
+         </div>
+         <Button style={{background:"#0093CC",borderRadius:"0px", paddingLeft:"30px",paddingRight:"30px"}} >Register Now </Button>
          {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
            <NavDropdown.Item href="#action/3.1">To Participate</NavDropdown.Item>
            <NavDropdown.Item href="#action/3.2">Jury</NavDropdown.Item>

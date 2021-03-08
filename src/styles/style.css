@@ -62,6 +62,10 @@ header {
   }
 }
 
+#contact .contact-details .socials {
+  position: relative;
+}
+
 #contact .p {
   color: white;
 }
