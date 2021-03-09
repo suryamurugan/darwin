@@ -9,6 +9,14 @@ header {
   display: flex;
 }
 
+#CustomButtonBoxRegister {
+  border-radius: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #0093cc;
+  font-weight: 600;
+}
+
 .inactive {
   color: #fff;
   text-decoration: none;
@@ -101,7 +109,7 @@ header {
 }
 
 #coverimg {
-  height: 80vh;
+  height: auto;
   width: 100%;
 }
 
@@ -144,6 +152,11 @@ header {
   margin: auto;
 }
 
+.maindiv {
+  width: 100%;
+  height: 50vh;
+}
+
 .container2 {
   width: 100%;
   height: 40vh;
@@ -156,7 +169,6 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.7;
   background: #ececec;
   -webkit-clip-path: polygon(55% 0, 60% 17%, 100% 15%, 100% 81%, 50% 100%, 0 79%, 0 15%);
           clip-path: polygon(55% 0, 60% 17%, 100% 15%, 100% 81%, 50% 100%, 0 79%, 0 15%);
@@ -175,13 +187,19 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .box2child {
-  height: 100%;
+  width: 60%;
+  height: 10%;
   margin: auto;
-  width: 100%;
-  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .boxnoi {
@@ -190,7 +208,6 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.7;
   background: #ececec;
   -webkit-clip-path: polygon(50% 21%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
           clip-path: polygon(50% 21%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
@@ -200,25 +217,47 @@ header {
   z-index: 9;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-content: center;
+  align-items: center;
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
 }
 
 #tswlogo {
   margin-top: 100px;
+  margin: auto;
   height: 80px;
+  padding: 0%;
 }
 
 #para {
   margin: auto;
-  width: 40%;
+  width: 60%;
+  font-size: 0.7rem;
+}
+
+.coverbox2 {
+  position: absolute;
+  top: 75%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -ms-grid;
+  display: grid;
+}
+
+#orangeButton {
+  background: white;
+  color: orangered;
+  border-radius: 0;
+  border-color: grey;
 }
 
 @media only screen and (max-width: 700px) {
@@ -232,13 +271,13 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.7;
+    opacity: 0.8;
     background: #ececec;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
   #tswlogo {
-    margin-top: 40px;
+    margin-top: 100px;
     height: 50px;
   }
   #para {
@@ -246,6 +285,41 @@ header {
     margin: auto;
     width: 90%;
     font-size: 0.7rem;
+  }
+  .coverbox2 {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    -webkit-transform: translate(-35%, -50%);
+            transform: translate(-35%, -50%);
+    display: -ms-grid;
+    display: grid;
+  }
+  #tsslogo {
+    height: 40px;
+  }
+  #sublogo {
+    height: 150px;
+    margin: 10px;
+  }
+  #sublogo {
+    height: 60px;
+  }
+  #CustomButtonBox {
+    padding: 0px;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 0.7rem;
+  }
+  .box2child {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
