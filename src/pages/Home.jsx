@@ -21,6 +21,8 @@ import mainlogo from "../mainlogo.png";
 import mainlogo2 from "../temp/mainlogo2.png";
 import cover from "../temp/00114.png";
 import bullet from "../temp/bullet.svg";
+import prize from "../temp/prize_bg2.png";
+import prizeIcon from "../temp/prizes_icon.svg";
 
 const Home = () => {
   const myRef = useRef(null);
@@ -35,12 +37,13 @@ const Home = () => {
       {/* <Button onClick={executeScroll}></Button> */}
       <WeMake />
 
-      {/* <TataStruct /> */}
+      <TataStruct />
+
       <NotionsOfIndia />
       <CompetitionBrief />
-      <Participate />
-      <CompetitionSchedule />
-      <div ref={myRef}>Element to scroll to</div>
+      {/* <Participate />
+      <CompetitionSchedule /> */}
+      {/* <div ref={myRef}>Element to scroll to</div> */}
 
       {/* 
 
@@ -141,10 +144,10 @@ const About = () => {
 
 const WeMake = () => {
   return (
-    <div className='maindiv'>
+    <div className='maindivmake'>
       <div className='container2'>
         <div className='box'></div>
-        <div className='box2'>
+        <div className='box2make'>
           <div className='box2child'>
             <img id='tswlogo' src={tswemake}></img>
             <br />
@@ -168,19 +171,21 @@ const TataStruct = () => {
     <div className='sect'>
       <div className='sectchild'>
         <div id='twoflex'>
-          <div>
-            <h5 style={{ color: "#0093CC" }}>
-              <b>TATA STRUCTURA</b>
-            </h5>
-            <p>
-              Tata Steel Tubes Strategic Business Unit manufactures structural
-              tubes under the brand name of Tata Structura. Besides bearing the
-              trust and value of the Tata Steel brand name, Tata Structura Steel
-              Hollow sections are advantageous from a techno-economic
-              perspective.
-            </p>
+          <div id='twoflex1'>
+            <div>
+              <h5 style={{ color: "#0093CC" }}>
+                <b>TATA STRUCTURA</b>
+              </h5>
+              <p>
+                Tata Steel Tubes Strategic Business Unit manufactures structural
+                tubes under the brand name of Tata Structura. Besides bearing
+                the trust and value of the Tata Steel brand name, Tata Structura
+                Steel Hollow sections are advantageous from a techno-economic
+                perspective.
+              </p>
+            </div>
           </div>
-          <div style={{}}>
+          <div id='twoflex2'>
             <img width='300px' src={tstr} style={{ padding: "10px" }} />
           </div>
         </div>
@@ -191,17 +196,17 @@ const TataStruct = () => {
 
 const NotionsOfIndia = () => {
   return (
-    <div className='maindiv'>
-      <div className='container2'>
+    <div className='maindivnoi'>
+      <div className='container2noi'>
         <div className='boxnoi'></div>
-        <div className='boxnoi2'>
-          <div className='box2child'>
+        <div className='box2noi2'>
+          <div className='box2childnoi'>
             <br />
             <br />
             <img id='tswlogo2' src={mainlogo2} />
             <br></br>
             <br></br>
-            <p id='para'>
+            <p>
               Notions of India is a design competition to create an outdoor
               symbol/structure preferably using steel hollow sections along with
               other materials. The sculpture must signify the vision and journey
@@ -224,9 +229,9 @@ const NotionsOfIndia = () => {
 
 const CompetitionBrief = () => {
   return (
-    <div className='sect' style={{ background: "#F4F5F9" }}>
+    <div className='sectcomp' style={{ background: "" }}>
       <div className='sectchild'>
-        <div style={{ marginTop: "40px" }}>
+        <div style={{ marginTop: "10px" }}>
           <h3 style={{ color: "#00124D" }}>COMPETITION BRIEF </h3>
         </div>
         <div style={{ display: "flex" }}>
@@ -241,12 +246,28 @@ const CompetitionBrief = () => {
             style={{ background: "white", height: "1px", width: "40%" }}
           ></div>
         </div>
-        <div style={{ margin: "50px" }}>
-          Over the past 15 years, India has undergone a rapid metamorphosis. The
-          country has never in the recent past posed a younger outlook with such
-          heightened aspirations. Today, it not only stands amongst the top 5
-          global economies but also is an important force in global and regional
-          politics.
+        <div style={{ margin: "40px" }}>
+          <p>
+            {" "}
+            Over the past 15 years, India has undergone a rapid metamorphosis.
+            The country has never in the recent past posed a younger outlook
+            with such heightened aspirations. Today, it not only stands amongst
+            the top 5 global economies but also is an important force in global
+            and regional politics. Over the past 15 years, India has undergone a
+            rapid metamorphosis. The country has never in the recent past posed
+            a younger outlook with such heightened aspirations. Today, it not
+            only stands amongst the top 5 global economies but also is an
+            important force in global and regional politics. What is a nation
+            but its people? India has a young populace - every third person in
+            an Indian city today is a youth. The median individual in India or
+            nearly 64 per cent of its population is in the working age group,
+            making it the youngest country in the world.
+          </p>
+        </div>
+        <div>
+          <Button id='orangeButton'>
+            <b>Read More</b>
+          </Button>
         </div>
       </div>
     </div>
@@ -369,32 +390,67 @@ const CompetitionSchedule = () => {
     { date: "", data: "a" },
   ];
   return (
-    <div style={{ background: "#08254F" }}>
-      <div style={{ marginTop: "80px" }}>
-        <h3 style={{ color: "#00124D" }}>COMPETITION SCHEDULE </h3>
-      </div>
-      <div style={{ display: "flex" }}>
-        <div style={{ background: "transparent", height: "1px", width: "40%" }}>
-          .
+    <div className='cuscont'>
+      <img
+        className='basebgimg'
+        src={prize}
+        alt='Snow'
+        style={{ width: "100%" }}
+      />
+      <div className='cuscent2'>
+        <div style={{ marginTop: "30px" }}>
+          <h3 style={{ color: "#00CCF8" }}>COMPETITION SCHEDULE </h3>
         </div>
-        <div style={{ background: "orange", height: "3px", width: "5%" }}>
-          .
+        <div style={{ display: "flex" }}>
+          <div
+            style={{ background: "transparent", height: "1px", width: "40%" }}
+          >
+            .
+          </div>
+          <div style={{ background: "orange", height: "3px", width: "5%" }}>
+            .
+          </div>
+          <div
+            style={{ background: "#707070", height: "1px", width: "55%" }}
+          ></div>
         </div>
-        <div
-          style={{ background: "#707070", height: "1px", width: "55%" }}
-        ></div>
-      </div>
-      <div style={{ marginTop: "10px" }}>
-        <table
-          style={{ margin: "auto", padding: "10px", background: "transparent" }}
-        >
-          <CustomTableRow data={data} />
-        </table>
-        {/* <SingleJuror />
-        <SingleJuror />
-        <SingleJuror /> */}
+        <div style={{ marginTop: "30px" }}>
+          <table
+            style={{
+              margin: "auto",
+              padding: "10px",
+              background: "transparent",
+            }}
+          >
+            <CustomTableRow data={data} />
+          </table>
+        </div>
       </div>
     </div>
+    // <div style={{ background: "#08254F" }}>
+    //   <div style={{ marginTop: "80px" }}>
+    //     <h3 style={{ color: "#00124D" }}>COMPETITION SCHEDULE </h3>
+    //   </div>
+    //   <div style={{ display: "flex" }}>
+    //     <div style={{ background: "transparent", height: "1px", width: "40%" }}>
+    //       .
+    //     </div>
+    //     <div style={{ background: "orange", height: "3px", width: "5%" }}>
+    //       .
+    //     </div>
+    //     <div
+    //       style={{ background: "#707070", height: "1px", width: "55%" }}
+    //     ></div>
+    //   </div>
+    //   <div style={{ marginTop: "10px" }}>
+    //     <table
+    //       style={{ margin: "auto", padding: "10px", background: "transparent" }}
+    //     >
+    //       <CustomTableRow data={data} />
+    //     </table>
+
+    //   </div>
+    // </div>
   );
 };
 

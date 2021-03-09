@@ -31,6 +31,37 @@ header {
   text-decoration: none;
 }
 
+#twoflex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#twoflex #twoflex1 {
+  width: 50%;
+}
+
+#twoflex #twoflex1 div {
+  float: right;
+  width: 500px;
+}
+
+#twoflex #twoflex2 {
+  width: 50%;
+}
+
+#twoflex #twoflex2 img {
+  margin-left: 40px;
+  float: left;
+}
+
 #contact {
   background: #00274e;
   display: -webkit-box;
@@ -151,6 +182,19 @@ header {
           align-items: center;
 }
 
+.sectcomp {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .sectchild {
   width: 100%;
   margin: auto;
@@ -161,9 +205,31 @@ header {
   height: 70vh;
 }
 
+.maindivmake {
+  width: 100%;
+  height: 40vh;
+}
+
+.container2make {
+  width: 100%;
+  height: 55vh;
+  position: relative;
+}
+
 .container2 {
   width: 100%;
   height: 55vh;
+  position: relative;
+}
+
+.maindivnoi {
+  width: 100%;
+  height: 40vh;
+}
+
+.container2noi {
+  width: 100%;
+  height: 40vh;
   position: relative;
 }
 
@@ -216,6 +282,23 @@ header {
   color: white;
 }
 
+.box2make {
+  z-index: 9;
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .box2 {
   z-index: 9;
   width: 100%;
@@ -244,9 +327,19 @@ header {
   right: 0;
 }
 
+.box2childnoi {
+  width: 60%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .boxnoi {
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -272,10 +365,17 @@ header {
   margin: auto;
 }
 
-#tswlogo {
-  margin-top: 100px;
+#tswlogo2 {
   margin: auto;
+  margin-top: 100px;
   height: 80px;
+  padding: 0%;
+}
+
+#tswlogo {
+  margin-top: 80px;
+  margin: auto;
+  height: 70px;
   padding: 0%;
 }
 
@@ -300,7 +400,6 @@ header {
   color: #ff4400;
   border-radius: 0;
   border-color: grey;
-  color: transparent;
 }
 
 #schtr {
@@ -325,6 +424,11 @@ header {
 
 .coverbgimg {
   height: 40vh;
+  width: auto;
+}
+
+.basebgimg {
+  height: 50vh;
   width: auto;
 }
 
@@ -355,6 +459,15 @@ header {
 }
 
 .cuscent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cuscent2 {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -408,6 +521,65 @@ header {
 }
 
 @media only screen and (max-width: 700px) {
+  .sect {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .sectcomp {
+    height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sectchild div p {
+    font-size: 0.7rem;
+  }
+  #twoflex {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #twoflex #twoflex1 {
+    width: 40%;
+  }
+  #twoflex #twoflex1 div {
+    text-align: inherit;
+    float: right;
+    width: 100%;
+  }
+  #twoflex #twoflex1 div p {
+    font-size: 0.7rem;
+  }
+  #twoflex #twoflex2 {
+    width: 50%;
+  }
+  #twoflex #twoflex2 img {
+    margin: auto;
+    width: 100%;
+    float: left;
+  }
+  .maindiv {
+    height: 40vh;
+  }
+  .cuscont2 {
+    height: 40vh;
+  }
+  .coverbox2 {
+    margin-top: 80px;
+  }
   .coverDiv {
     width: 100%;
     height: 20vh;
@@ -424,7 +596,7 @@ header {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
   #tswlogo {
-    margin-top: 100px;
+    margin-top: 70px;
     height: 50px;
   }
   #para {
@@ -515,11 +687,14 @@ header {
     width: 100%;
     margin-top: 40px;
   }
-}
-
-@media (max-width: 700px) and (min-width: 1080px) {
-  .coverbox2 {
-    background: red;
+  .box2childnoi p {
+    font-size: 0.65rem;
+  }
+  #tswlogo2 {
+    margin: auto;
+    margin-top: 80px;
+    height: 60px;
+    padding: 0%;
   }
 }
 /*# sourceMappingURL=style.css.map */
