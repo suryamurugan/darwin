@@ -410,13 +410,18 @@ header {
     width: 100%;
   }
   #przicon {
-    height: 60px;
+    margin-top: 10px;
+    height: 40px;
   }
   #prziconquote {
     font-size: 0.6rem;
   }
   #prziconquotelast {
     font-size: 0.3rem;
+  }
+  .coverbgimg {
+    height: 30vh;
+    width: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
