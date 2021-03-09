@@ -18,7 +18,9 @@ const CustomNav = () => {
       bg='white'
       expand='lg'
       style={{ paddingLeft: "100px" }}
+      fixed='top'
     >
+      {/* // <Navbar className='navbar sticky-top navbar-light bg-light'> */}
       <Navbar.Brand href='/'>
         <img
           alt=''
@@ -84,6 +86,7 @@ const CustomNav = () => {
            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
          </NavDropdown> */}
       </Navbar.Collapse>
+      {/* </nav> */}
     </Navbar>
   );
 };

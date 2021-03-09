@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   Jumbotron,
   Nav,
@@ -20,18 +20,28 @@ import tsmss from "../temp/tsmss.png";
 import mainlogo from "../mainlogo.png";
 import mainlogo2 from "../temp/mainlogo2.png";
 import cover from "../temp/00114.png";
+import bullet from "../temp/bullet.svg";
 
 const Home = () => {
+  const myRef = useRef(null);
+  const executeScroll = () =>
+    myRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+
   return (
     <div>
       <Cover2 />
+
       <About />
+      <Button onClick={executeScroll}></Button>
       <WeMake />
+
       {/* <TataStruct /> */}
       <NotionsOfIndia />
       <CompetitionBrief />
       <Participate />
       <CompetitionSchedule />
+      <div ref={myRef}>Element to scroll to</div>
+
       {/* 
 
 
@@ -350,13 +360,21 @@ const ParticipateCard = () => {
 };
 
 const CompetitionSchedule = () => {
+  var data = [
+    { date: "", data: "o" },
+    { date: "", data: "o" },
+    { date: "", data: "o" },
+    { date: "", data: "o" },
+    { date: "", data: "o" },
+    { date: "", data: "a" },
+  ];
   return (
-    <div>
+    <div style={{ background: "#08254F" }}>
       <div style={{ marginTop: "80px" }}>
         <h3 style={{ color: "#00124D" }}>COMPETITION SCHEDULE </h3>
       </div>
       <div style={{ display: "flex" }}>
-        <div style={{ background: "white", height: "1px", width: "40%" }}>
+        <div style={{ background: "transparent", height: "1px", width: "40%" }}>
           .
         </div>
         <div style={{ background: "orange", height: "3px", width: "5%" }}>
@@ -366,14 +384,12 @@ const CompetitionSchedule = () => {
           style={{ background: "#707070", height: "1px", width: "55%" }}
         ></div>
       </div>
-      <div
-        style={{
-          display: "inline-flex",
-          flexWrap: "wrap",
-          padding: "5px",
-          flexDirection: "row",
-        }}
-      >
+      <div style={{ marginTop: "10px" }}>
+        <table
+          style={{ margin: "auto", padding: "10px", background: "transparent" }}
+        >
+          <CustomTableRow data={data} />
+        </table>
         {/* <SingleJuror />
         <SingleJuror />
         <SingleJuror /> */}
@@ -382,37 +398,49 @@ const CompetitionSchedule = () => {
   );
 };
 
-const Singlerow = () => {
-  return (
-    <div style={{ width: "150px", margin: "20px" }}>
-      <img src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTMgNTMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUzIDUzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBzdHlsZT0iZmlsbDojRTdFQ0VEOyIgZD0iTTE4LjYxMyw0MS41NTJsLTcuOTA3LDQuMzEzYy0wLjQ2NCwwLjI1My0wLjg4MSwwLjU2NC0xLjI2OSwwLjkwM0MxNC4wNDcsNTAuNjU1LDE5Ljk5OCw1MywyNi41LDUzDQoJYzYuNDU0LDAsMTIuMzY3LTIuMzEsMTYuOTY0LTYuMTQ0Yy0wLjQyNC0wLjM1OC0wLjg4NC0wLjY4LTEuMzk0LTAuOTM0bC04LjQ2Ny00LjIzM2MtMS4wOTQtMC41NDctMS43ODUtMS42NjUtMS43ODUtMi44ODh2LTMuMzIyDQoJYzAuMjM4LTAuMjcxLDAuNTEtMC42MTksMC44MDEtMS4wM2MxLjE1NC0xLjYzLDIuMDI3LTMuNDIzLDIuNjMyLTUuMzA0YzEuMDg2LTAuMzM1LDEuODg2LTEuMzM4LDEuODg2LTIuNTN2LTMuNTQ2DQoJYzAtMC43OC0wLjM0Ny0xLjQ3Ny0wLjg4Ni0xLjk2NXYtNS4xMjZjMCwwLDEuMDUzLTcuOTc3LTkuNzUtNy45NzdzLTkuNzUsNy45NzctOS43NSw3Ljk3N3Y1LjEyNg0KCWMtMC41NCwwLjQ4OC0wLjg4NiwxLjE4NS0wLjg4NiwxLjk2NXYzLjU0NmMwLDAuOTM0LDAuNDkxLDEuNzU2LDEuMjI2LDIuMjMxYzAuODg2LDMuODU3LDMuMjA2LDYuNjMzLDMuMjA2LDYuNjMzdjMuMjQNCglDMjAuMjk2LDM5Ljg5OSwxOS42NSw0MC45ODYsMTguNjEzLDQxLjU1MnoiLz4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM1NTYwODA7IiBkPSJNMjYuOTUzLDAuMDA0QzEyLjMyLTAuMjQ2LDAuMjU0LDExLjQxNCwwLjAwNCwyNi4wNDdDLTAuMTM4LDM0LjM0NCwzLjU2LDQxLjgwMSw5LjQ0OCw0Ni43Ng0KCQljMC4zODUtMC4zMzYsMC43OTgtMC42NDQsMS4yNTctMC44OTRsNy45MDctNC4zMTNjMS4wMzctMC41NjYsMS42ODMtMS42NTMsMS42ODMtMi44MzV2LTMuMjRjMCwwLTIuMzIxLTIuNzc2LTMuMjA2LTYuNjMzDQoJCWMtMC43MzQtMC40NzUtMS4yMjYtMS4yOTYtMS4yMjYtMi4yMzF2LTMuNTQ2YzAtMC43OCwwLjM0Ny0xLjQ3NywwLjg4Ni0xLjk2NXYtNS4xMjZjMCwwLTEuMDUzLTcuOTc3LDkuNzUtNy45NzcNCgkJczkuNzUsNy45NzcsOS43NSw3Ljk3N3Y1LjEyNmMwLjU0LDAuNDg4LDAuODg2LDEuMTg1LDAuODg2LDEuOTY1djMuNTQ2YzAsMS4xOTItMC44LDIuMTk1LTEuODg2LDIuNTMNCgkJYy0wLjYwNSwxLjg4MS0xLjQ3OCwzLjY3NC0yLjYzMiw1LjMwNGMtMC4yOTEsMC40MTEtMC41NjMsMC43NTktMC44MDEsMS4wM1YzOC44YzAsMS4yMjMsMC42OTEsMi4zNDIsMS43ODUsMi44ODhsOC40NjcsNC4yMzMNCgkJYzAuNTA4LDAuMjU0LDAuOTY3LDAuNTc1LDEuMzksMC45MzJjNS43MS00Ljc2Miw5LjM5OS0xMS44ODIsOS41MzYtMTkuOUM1My4yNDYsMTIuMzIsNDEuNTg3LDAuMjU0LDI2Ljk1MywwLjAwNHoiLz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K' />
-      <div style={{ textAlign: "start" }}>
-        <b>Tony Stark</b>
-        <p>
-          <i>SomeDesignation</i>
-        </p>
-        <p style={{ fontSize: ".7rem" }}>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-          consequat massa quis enim.
-        </p>
-      </div>
-    </div>
-  );
-};
-
-const CustomTableRow = () => {
+const CustomTableRow = ({ data }) => {
+  var colors = ["orange", "white"];
   return (
     <>
-      <tr>
-        <td>icon</td>
-        <td>March 3,2021</td>
-        <td>Competition Announcement</td>
-      </tr>
+      {data.map((item, index) => (
+        <Singlerow item={item} color={colors[index % colors.length]} />
+      ))}
     </>
   );
 };
 
+const Singlerow = ({ item, color }) => {
+  var colors = ["#F77A19", "#FFFFFF"];
+
+  return (
+    <>
+      {" "}
+      {color === "white" ? (
+        <tr id='schtr' style={{ background: "transparent" }}>
+          <td id='schtd' style={{ background: "transparent" }}>
+            <img src={bullet} />
+          </td>
+          <td style={{ color: "#FFFFFF", background: "transparent" }}>
+            March 3,2021
+          </td>
+          <td style={{ color: "#FFFFFF", background: "transparent" }}>
+            Competition Announcement
+          </td>
+        </tr>
+      ) : (
+        <tr id='schtr'>
+          <td id='schtd' style={{ background: "black" }}>
+            <img src={bullet} />
+          </td>
+          <td style={{ color: "#F77A19", background: "black" }}>
+            March 3,2021
+          </td>
+          <td style={{ color: "#F77A19", background: "black" }}>
+            Competition Announcement
+          </td>
+        </tr>
+      )}
+    </>
+  );
+};
 export default Home;
