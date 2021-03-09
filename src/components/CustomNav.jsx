@@ -27,7 +27,7 @@ const CustomNav = ()=>{
          <div style={{marginRight:"20px",marginLeft:"20px"}}>
            |
          </div>
-         <Button style={{background:"#0093CC",borderRadius:"0px", paddingLeft:"30px",paddingRight:"30px"}} >Register Now </Button>
+         <Button id="CustomButtonBoxRegister" >Register Now </Button>
          {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
            <NavDropdown.Item href="#action/3.1">To Participate</NavDropdown.Item>
            <NavDropdown.Item href="#action/3.2">Jury</NavDropdown.Item>

@@ -47,7 +47,7 @@ function App() {
               <Home />
             </Route>
           </Switch>
-          <CustomFooter />
+          {/* <CustomFooter /> */}
 
         </div>
       </Router>
@@ -113,43 +113,6 @@ const Intro = () => {
   );
 };
 
-const CompetitionSchedule = () => {
-  return (
-    <>
-      <div
-        style={{
-          background: "whitesmoke",
-          height: "50vh",
-          alignItems: "center",
-          justifyItems: "center",
-        }}
-      >
-        COMPETITION SCHDEULE
-        <Table style={{ margin: "auto" }}>
-          <CustomTableRow />
-          <CustomTableRow />
-          <CustomTableRow />
-          <CustomTableRow />
-          <CustomTableRow />
-          <CustomTableRow />
-          <CustomTableRow />
-        </Table>
-      </div>
-    </>
-  );
-};
-
-const CustomTableRow = () => {
-  return (
-    <>
-      <tr>
-        <td>icon</td>
-        <td>March 3,2021</td>
-        <td>Competition Announcement</td>
-      </tr>
-    </>
-  );
-};
 
 const Participate = () => {
   return (

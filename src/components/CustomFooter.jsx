@@ -39,8 +39,8 @@ const CustomFooter = ()=>{
                  
                 <div className="company-stuff">
                     <div className="logo">
-                        <img src={mainlogo} alt="" />
-                        <span>cvf</span>
+                        <img src={mainlogo} alt=""/>
+                        {/* <span>cvf</span> */}
                     </div>
                     <div className="links" style={{color:"white"}}>
                             <a style={{margin:"10px",fontSize:"0.7rem"}}>Site Map</a> 
