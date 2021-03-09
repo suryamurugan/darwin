@@ -92,8 +92,8 @@ header {
 }
 
 #coverimg {
-    height: auto;
-    width: 100%;
+    height: 60vh;
+    width: auto;
 }
 
 #tsslogo {
@@ -130,12 +130,12 @@ header {
 
 .maindiv {
     width: 100%;
-    height: 50vh;
+    height: 70vh;
 }
 
 .container2 {
     width: 100%;
-    height: 40vh;
+    height: 55vh;
     position: relative;
 }
 
@@ -318,6 +318,24 @@ header {
     display: grid;
 }
 
+.cuscont2 {
+    height: 70vh;
+    //  width: 100%;
+    //height: auto;
+    //position: relative;
+    //text-align: center;
+    color: white;
+    display: grid;
+    //  height: 100%;
+    display: flex;
+    overflow: hidden;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
 .cuscent {
     position: absolute;
     top: 50%;
@@ -496,5 +514,11 @@ header {
         //     border-radius: 0;
         //     margin: 10px;
         // }
+    }
+}
+
+@media (max-width: 700px) and (min-width: 1080px) {
+    .coverbox2 {
+        background: red;
     }
 }

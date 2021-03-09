@@ -2,13 +2,34 @@ import React from "react";
 import brief from "../temp/brief.png";
 import bullet1 from "../temp/bullet.svg";
 import bullet2 from "../temp/bullet.svg";
+import prize from "../temp/prize_bg2.png";
+import prizeIcon from "../temp/prizes_icon.svg";
+
 const Brief = () => {
   return (
     <div>
-      <div style={{ width: "100%" }}>
-        <img width='100%' src={brief}></img>
+      <div className='cuscont'>
+        <img
+          className='coverbgimg'
+          src={prize}
+          alt='Snow'
+          style={{ width: "100%" }}
+        />
+        <div className='cuscent'>
+          <img id='przicon' src={prizeIcon} alt='Snow' />
+          <br />
+          <br />
+          <h4 id='prziconquote'>
+            {" "}
+            "Every nation has a message to deliver, a mission to fulfil, a
+            destiny to reach.
+          </h4>
+
+          <i id='prziconquotelast'>-Swami Vivkeananda</i>
+        </div>
       </div>
       <TheBackground />
+
       <TheRoadBlocks />
       <TheSolution />
       <FromRtoR />
@@ -36,7 +57,7 @@ const TheBackground = () => {
       </div>
       <br />
 
-      <div style={{ width: "70%", margin: "auto" }}>
+      <div id='bulletItems' style={{ width: "70%", margin: "auto" }}>
         Over the past 15 years, India has undergone a rapid metamorphosis. The
         country has never in the recent past posed a younger outlook with such
         heightened aspirations. Today, it not only stands amongst the top 5
@@ -54,9 +75,11 @@ const TheBackground = () => {
         group, making it the youngest country in the world.
         <br />
         <br />
-        <i style={{ color: "orange" }}>
-          Every great design begins with an even better story.
-        </i>
+        <b>
+          <i style={{ color: "orange" }}>
+            Every great design begins with an even better story.
+          </i>
+        </b>
         <div style={{ color: "orange" }}>~Lorinda Mamo</div>
         India is in performing optimally on most counts. Its’ innate strengths
         present a picture of a promising and glorious future.
@@ -106,9 +129,11 @@ const TheRoadBlocks = () => {
       be celebrated by a billion?
       <br />
       <br />
-      <i style={{ color: "orange" }}>
-        A different world cannot be built by indifferent people.
-      </i>
+      <b>
+        <i style={{ color: "orange" }}>
+          A different world cannot be built by indifferent people.
+        </i>
+      </b>
       <br />
       <div style={{ color: "orange" }}> ~Peter Marshall </div>
       <br />

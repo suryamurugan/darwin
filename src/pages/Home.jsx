@@ -32,7 +32,7 @@ const Home = () => {
       <Cover2 />
 
       <About />
-      <Button onClick={executeScroll}></Button>
+      {/* <Button onClick={executeScroll}></Button> */}
       <WeMake />
 
       {/* <TataStruct /> */}
@@ -53,8 +53,8 @@ const Cover2 = () => {
   return (
     <div className='maindiv'>
       <div className='container2'>
-        <div>
-          <img id='coverimg' src={cover} alt='Snow'></img>
+        <div className='cuscont2'>
+          <img src={cover} alt='Snow'></img>
         </div>
         <div className='box2'>
           <div className='coverbox2'>

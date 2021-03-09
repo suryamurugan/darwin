@@ -50,7 +50,7 @@ const TheBackground = () => {
   return (
     <div style={{ background: "#ececec" }}>
       <div style={{ paddingTop: "40px" }}>
-        <h3 style={{ color: "" }}>ELIGIBILITY CRITERIA </h3>
+        <h3 style={{ color: "#00124D" }}>ELIGIBILITY CRITERIA </h3>
       </div>
       <div style={{ display: "flex" }}>
         <div
