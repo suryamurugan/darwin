@@ -143,6 +143,54 @@ header {
     clip-path: polygon( 55% 0, 60% 17%, 100% 15%, 100% 81%, 50% 100%, 0 79%, 0 15%);
 }
 
+.boxprize {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ececec;
+    // clip-path: polygon( 55% 0, 60% 17%, 100% 15%, 100% 81%, 50% 100%, 0 79%, 0 15%);
+}
+
+.box2prize {
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+    //  background: blue;
+}
+
+.box2childprizze {
+    // height: 100%;
+    // margin: auto;
+    // width: 100%;
+    // margin: auto;
+    // height: 100%;
+    // //  background: red;
+    // justify-content: center;
+    // padding: 0;
+    // margin: 0;
+    // list-style: none;
+    // display: flex;
+    width: 60%;
+    height: 10%;
+    //overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+}
+
 .box2 {
     z-index: 9;
     width: 100%;
@@ -226,9 +274,53 @@ header {
 
 #orangeButton {
     background: white;
-    color: orangered;
+    color: hsl(16, 100%, 50%);
     border-radius: 0;
     border-color: grey;
+    color: transparent;
+}
+
+#schtr {
+    padding: 10px;
+    margin: auto;
+}
+
+#schtd {
+    margin: 10px;
+    padding: 10px;
+}
+
+#prizebg {
+    height: 100px;
+    width: autos;
+}
+
+#resc {
+    width: 100%;
+    height: 50vh;
+}
+
+.coverbgimg {
+    height: 40vh;
+    width: auto;
+}
+
+.cuscont {
+    position: relative;
+    text-align: center;
+    color: white;
+    display: grid;
+}
+
+.cuscent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#przicon {
+    height: 100px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -290,5 +382,18 @@ header {
         left: 0;
         bottom: 0;
         right: 0;
+    }
+    #resc {
+        height: 200px;
+        width: 100%;
+    }
+    #przicon {
+        height: 60px;
+    }
+    #prziconquote {
+        font-size: 0.6rem;
+    }
+    #prziconquotelast {
+        font-size: 0.3rem;
     }
 }
