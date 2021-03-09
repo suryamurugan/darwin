@@ -15,7 +15,7 @@ import {
   Container,
 } from "react-bootstrap";
 import prize from "../temp/prize_bg2.png";
-import prizeIcon from "../temp/prizes_icon.svg";
+import prizeIcon from "../temp/participate_icon.svg";
 
 const Participate = () => {
   return (
@@ -27,6 +27,10 @@ const Participate = () => {
           alt='Snow'
           style={{ width: "100%" }}
         />
+        <div className='bottom-left'>Bottom Left</div>
+        <div className='top-left'>Top Left</div>
+        <div className='top-right'>Top Right</div>
+        <div className='bottom-right'>Bottom Right</div>
         <div className='cuscent'>
           <img id='przicon' src={prizeIcon} alt='Snow' />
           <br />

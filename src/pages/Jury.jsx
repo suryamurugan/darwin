@@ -8,7 +8,7 @@ import master from "../temp/master_jury.svg";
 import grand from "../temp/grand_jury.svg";
 
 import prize from "../temp/prize_bg2.png";
-import prizeIcon from "../temp/prizes_icon.svg";
+import prizeIcon from "../temp/jury_icon.svg";
 const Jury = () => {
   return (
     <div>
