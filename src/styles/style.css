@@ -348,6 +348,47 @@ header {
   height: 100px;
 }
 
+#processItem {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin: "auto";
+  padding: 5px;
+}
+
+#bulletItems {
+  width: 70%;
+  margin: auto;
+}
+
+#clickButton {
+  border-radius: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: transparent;
+  font-weight: 600;
+  color: darkslategrey;
+  font-weight: 600;
+  border-color: #0093cc;
+}
+
+#buttonpair {
+  margin: auto;
+  float: left;
+  width: auto;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+#buttonpair2 {
+  margin: auto;
+  float: initial;
+  width: auto;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
 @media only screen and (max-width: 700px) {
   .coverDiv {
     width: 100%;
@@ -437,17 +478,24 @@ header {
   #bulletItems tr td {
     font-size: 0.7rem;
   }
-}
-
-#processItem {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin: "auto";
-  padding: 5px;
-}
-
-#bulletItems {
-  width: 70%;
-  margin: auto;
+  #clickButton {
+    border-radius: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.7rem;
+    background-color: transparent;
+    font-weight: 600;
+    color: darkslategrey;
+    font-weight: 600;
+    border-color: #0093cc;
+  }
+  #buttonpair {
+    margin: auto;
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

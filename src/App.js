@@ -22,6 +22,7 @@ import Brief from "./pages/Brief";
 import Jury from "./pages/Jury";
 import Registeration from "./pages/Registeration";
 import Prize from "./pages/Prize";
+import Participate from "./pages/Participate";
 import CustomFooter from "./components/CustomFooter";
 
 function App() {
@@ -39,6 +40,9 @@ function App() {
             </Route>
             <Route path='/prize'>
               <Prize />
+            </Route>{" "}
+            <Route path='/participate'>
+              <Participate />
             </Route>
             <Route path='/register'>
               <Registeration />
@@ -112,31 +116,31 @@ const Intro = () => {
   );
 };
 
-const Participate = () => {
-  return (
-    <div
-      style={{
-        background: "whitesmoke",
-        height: "50vh",
-        alignItems: "center",
-        justifyItems: "center",
-      }}
-    >
-      <div>Participate</div>
-      <div
-        style={{
-          display: "inline-flex",
-          justifyItems: "center",
-          alignItems: "center",
-        }}
-      >
-        <CustomParticipateCard />
-        <CustomParticipateCard />
-        <CustomParticipateCard />
-      </div>
-    </div>
-  );
-};
+// const Participate = () => {
+//   return (
+//     <div
+//       style={{
+//         background: "whitesmoke",
+//         height: "50vh",
+//         alignItems: "center",
+//         justifyItems: "center",
+//       }}
+//     >
+//       <div>Participate</div>
+//       <div
+//         style={{
+//           display: "inline-flex",
+//           justifyItems: "center",
+//           alignItems: "center",
+//         }}
+//       >
+//         <CustomParticipateCard />
+//         <CustomParticipateCard />
+//         <CustomParticipateCard />
+//       </div>
+//     </div>
+//   );
+// };
 
 const CustomParticipateCard = () => {
   return (

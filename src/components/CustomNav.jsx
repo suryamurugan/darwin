@@ -51,7 +51,7 @@ const CustomNav = () => {
         <Nav.Link
           style={{ color: "#707070" }}
           activeClassName='active'
-          href='#link'
+          href='/participate'
         >
           To Participate
         </Nav.Link>
@@ -65,7 +65,7 @@ const CustomNav = () => {
         <Nav.Link
           style={{ color: "#707070" }}
           activeClassName='active'
-          href='#link'
+          href='/participate'
         >
           Schedule
         </Nav.Link>
