@@ -7,6 +7,27 @@ header {
     display: flex;
 }
 
+// #custnav {
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     background: white;
+//     background-color: white;
+// }
+#CustomButtonBoxRegister {
+    border-radius: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #0093cc;
+    font-weight: 600;
+}
+
+/// JURY
+#processItem {
+    margin: "auto";
+    // background: red;
+}
+
 .inactive {
     color: #fff;
     text-decoration: none;
@@ -17,8 +38,29 @@ header {
     text-decoration: none;
 }
 
+#twoflex {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    #twoflex1 {
+        width: 50%;
+        div {
+            float: right;
+            width: 500px;
+        }
+    }
+    #twoflex2 {
+        width: 50%;
+        img {
+            margin-left: 40px;
+            float: left;
+        }
+    }
+}
+
 #contact {
-    background: #00274E;
+    background: #00274e;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,5 +103,585 @@ header {
             width: 250px;
             object-fit: contain;
         }
+    }
+}
+
+.coverDiv {
+    width: 100%;
+    height: auto;
+    //  background: red;
+}
+
+#coverimg {
+    height: 60vh;
+    width: auto;
+}
+
+#tsslogo {
+    height: 100px;
+    margin: 10px;
+}
+
+#sublogo {
+    height: 150px;
+    margin: 10px;
+    margin-bottom: 100px;
+}
+
+#buttondivbox {
+    margin: auto;
+    #CustomButtonBox {
+        background: rgba(0, 0, 0, 0.24);
+        border-radius: 0;
+        margin: 10px;
+    }
+}
+
+.sect {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectcomp {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectchild {
+    width: 100%;
+    margin: auto;
+}
+
+.maindiv {
+    width: 100%;
+    height: 70vh;
+}
+
+.maindivmake {
+    width: 100%;
+    height: 40vh;
+}
+
+.container2make {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+}
+
+.container2 {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+}
+
+.maindivnoi {
+    width: 100%;
+    height: 40vh;
+}
+
+.container2noi {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+
+.box {
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ececec;
+    clip-path: polygon( 55% 0, 60% 17%, 100% 15%, 100% 81%, 50% 100%, 0 79%, 0 15%);
+}
+
+.boxprize {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ececec;
+    // clip-path: polygon( 55% 0, 60% 17%, 100% 15%, 100% 81%, 50% 100%, 0 79%, 0 15%);
+}
+
+.box2prize {
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+    //  background: blue;
+}
+
+.box2childprizze {
+    // height: 100%;
+    // margin: auto;
+    // width: 100%;
+    // margin: auto;
+    // height: 100%;
+    // //  background: red;
+    // justify-content: center;
+    // padding: 0;
+    // margin: 0;
+    // list-style: none;
+    // display: flex;
+    width: 60%;
+    height: 10%;
+    //overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+}
+
+.box2make {
+    z-index: 9;
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+    //  background: blue;
+}
+
+.box2 {
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+    //  background: blue;
+}
+
+.box2child {
+    // height: 100%;
+    // margin: auto;
+    // width: 100%;
+    // margin: auto;
+    // height: 100%;
+    // //  background: red;
+    // justify-content: center;
+    // padding: 0;
+    // margin: 0;
+    // list-style: none;
+    // display: flex;
+    width: 60%;
+    height: 10%;
+    //overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.box2childnoi {
+    // height: 100%;
+    // margin: auto;
+    // width: 100%;
+    // margin: auto;
+    // height: 100%;
+    // //  background: red;
+    // justify-content: center;
+    // padding: 0;
+    // margin: 0;
+    // list-style: none;
+    // display: flex;
+    width: 60%;
+    //overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.boxnoi {
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ececec;
+    clip-path: polygon(50% 21%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+}
+
+.box2noi2 {
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+}
+
+#tswlogo2 {
+    margin: auto;
+    margin-top: 100px;
+    height: 80px;
+    padding: 0%;
+}
+
+#tswlogo {
+    margin-top: 80px;
+    margin: auto;
+    height: 70px;
+    padding: 0%;
+}
+
+#para {
+    margin: auto;
+    width: 60%;
+    font-size: 0.7rem;
+}
+
+.coverbox2 {
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    display: grid;
+}
+
+#orangeButton {
+    background: white;
+    color: hsl(16, 100%, 50%);
+    border-radius: 0;
+    border-color: grey;
+}
+
+#schtr {
+    padding: 10px;
+    margin: auto;
+}
+
+#schtd {
+    margin: 10px;
+    padding: 10px;
+}
+
+#prizebg {
+    height: 100px;
+    width: autos;
+}
+
+#resc {
+    width: 100%;
+    height: 50vh;
+}
+
+.coverbgimg {
+    height: 40vh;
+    width: auto;
+}
+
+.basebgimg {
+    height: 50vh;
+    width: auto;
+}
+
+.cuscont {
+    position: relative;
+    text-align: center;
+    color: white;
+    display: grid;
+}
+
+.cuscont2 {
+    height: 70vh;
+    //  width: 100%;
+    //height: auto;
+    //position: relative;
+    //text-align: center;
+    color: white;
+    display: grid;
+    //  height: 100%;
+    display: flex;
+    overflow: hidden;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.cuscent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cuscent2 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#przicon {
+    height: 100px;
+}
+
+#processItem {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin: "auto";
+    padding: 5px;
+    // height: 130px;
+    // background: red;
+}
+
+#bulletItems {
+    width: 70%;
+    margin: auto;
+}
+
+#clickButton {
+    border-radius: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    font-weight: 600;
+    color: darkslategrey;
+    font-weight: 600;
+    border-color: #0093cc;
+}
+
+#buttonpair {
+    margin: auto;
+    float: left;
+    width: auto;
+    margin-left: 50px;
+    margin-top: 30px;
+    // #CustomButtonBox {
+    //     background: rgba(0, 0, 0, 0.24);
+    //     border-radius: 0;
+    //     margin: 10px;
+    // }
+}
+
+#buttonpair2 {
+    margin: auto;
+    float: initial;
+    width: auto;
+    margin-left: 50px;
+    margin-top: 30px;
+    // #CustomButtonBox {
+    //     background: rgba(0, 0, 0, 0.24);
+    //     border-radius: 0;
+    //     margin: 10px;
+    // }
+}
+
+@media only screen and (max-width: 700px) {
+    .sect {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .sectcomp {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectchild {
+        div {
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+    #twoflex {
+        display: inline-flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        #twoflex1 {
+            width: 40%;
+            div {
+                text-align: inherit;
+                float: right;
+                width: 100%;
+                h5 {}
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+        #twoflex2 {
+            width: 50%;
+            img {
+                margin: auto;
+                width: 100%;
+                // width: 40px;
+                float: left;
+            }
+        }
+    }
+    .maindiv {
+        height: 40vh;
+    }
+    .cuscont2 {
+        height: 40vh;
+    }
+    .coverbox2 {
+        margin-top: 80px;
+    }
+    .coverDiv {
+        width: 100%;
+        height: 20vh;
+        //  background: red;
+    }
+    .box {
+        width: 100%;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.8;
+        background: #ececec;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    #tswlogo {
+        margin-top: 70px;
+        height: 50px;
+    }
+    #para {
+        margin-top: 20px;
+        margin: auto;
+        width: 90%;
+        font-size: 0.7rem;
+    }
+    .coverbox2 {
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        transform: translate(-35%, -50%);
+        display: grid;
+    }
+    #tsslogo {
+        height: 40px;
+    }
+    #sublogo {
+        height: 150px;
+        margin: 10px;
+    }
+    #sublogo {
+        height: 60px;
+    }
+    #buttondivbox {}
+    #CustomButtonBox {
+        padding: 0px;
+        padding-right: 8px;
+        padding-left: 8px;
+        font-size: 0.7rem;
+    }
+    .box2child {
+        width: 60%;
+        height: 100%;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    #resc {
+        height: 200px;
+        width: 100%;
+    }
+    #przicon {
+        margin-top: 10px;
+        height: 40px;
+    }
+    #prziconquote {
+        font-size: 0.6rem;
+    }
+    #prziconquotelast {
+        font-size: 0.3rem;
+    }
+    .coverbgimg {
+        height: 30vh;
+        width: auto;
+    }
+    #processItem {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin: "auto";
+        padding: 5px;
+        height: 130px;
+        // background: red;
+    }
+    #bulletItems {
+        tr td {
+            font-size: 0.7rem;
+        }
+    }
+    #clickButton {
+        border-radius: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 0.7rem;
+        background-color: transparent;
+        font-weight: 600;
+        color: darkslategrey;
+        font-weight: 600;
+        border-color: #0093cc;
+    }
+    #buttonpair {
+        margin: auto;
+        float: left;
+        width: 100%;
+        margin-top: 40px;
+        // #CustomButtonBox {
+        //     background: rgba(0, 0, 0, 0.24);
+        //     border-radius: 0;
+        //     margin: 10px;
+        // }
+    }
+    .box2childnoi {
+        p {
+            font-size: 0.65rem;
+        }
+    }
+    #tswlogo2 {
+        margin: auto;
+        margin-top: 80px;
+        height: 60px;
+        padding: 0%;
     }
 }
