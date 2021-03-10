@@ -1,6 +1,7 @@
 import logo from "./logo.png";
 import "./App.css";
 import "./styles/style.css";
+import "./styles/register.css";
 import {
   Jumbotron,
   Nav,
