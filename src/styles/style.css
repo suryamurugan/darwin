@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 nav {
   background: white;
 }
@@ -7,6 +9,63 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.header-icons{
+  height: 200px !important;
+  background-color: black;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin-left: 20% !important;
+  display: flex;
+  margin-top: -6rem;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  clear: both;
+}
+
+.column-active{
+  background-color: #0379fc !important;
+  color: white;
+  height: 213px !important;
+  margin-top: -1rem;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 3px 9px 10px 0 rgba(0, 0, 0, 0.16);
+  padding: 20px;
+  text-align: center;
+  background-color: #f1f1f1;
+  height: 193px;
+  width: 193px;
+  justify-content: space-between;
+}
+
+#CustomButtonBoxRegister {
+  border-radius: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #0093cc;
+  font-weight: 600;
+}
+
+#processItem {
+  margin: "auto";
 }
 
 .inactive {
@@ -19,8 +78,39 @@ header {
   text-decoration: none;
 }
 
+#twoflex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#twoflex #twoflex1 {
+  width: 50%;
+}
+
+#twoflex #twoflex1 div {
+  float: right;
+  width: 500px;
+}
+
+#twoflex #twoflex2 {
+  width: 50%;
+}
+
+#twoflex #twoflex2 img {
+  margin-left: 40px;
+  float: left;
+}
+
 #contact {
-  background: #00274E;
+  background: #00274e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,5 +183,580 @@ header {
   width: 250px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.coverDiv {
+  width: 100%;
+  height: auto;
+}
+
+#coverimg {
+  height: 60vh;
+  width: auto;
+}
+
+#tsslogo {
+  height: 100px;
+  margin: 10px;
+}
+
+#sublogo {
+  height: 150px;
+  margin: 10px;
+  margin-bottom: 100px;
+}
+
+#buttondivbox {
+  margin: auto;
+}
+
+#buttondivbox #CustomButtonBox {
+  background: rgba(0, 0, 0, 0.24);
+  border-radius: 0;
+  margin: 10px;
+}
+
+.sect {
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectcomp {
+  height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectchild {
+  /* padding-top: 200px !important; */
+  width: 100%;
+  margin: auto;
+}
+
+.sectnewchild{
+  width: 40%;
+  margin: 110px !important;
+}
+
+.setSubChild{
+  padding-top: 200px !important;
+}
+
+.maindiv {
+  width: 100%;
+  height: 70vh;
+}
+
+.maindivmake {
+  width: 100%;
+  height: 40vh;
+}
+
+.container2make {
+  width: 100%;
+  height: 55vh;
+  position: relative;
+}
+
+.container2 {
+  width: 100%;
+  height: 55vh;
+  position: relative;
+}
+
+.maindivnoi {
+  width: 100%;
+  height: 40vh;
+}
+
+.container2noi {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+
+.box {
+  width: 100%;
+  height: 489px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ececec;
+  -webkit-clip-path: polygon(55% 0, 60% 17%, 100% 15%, 100% 81%, 50% 100%, 0 79%, 0 15%);
+          clip-path: polygon(55% 0, 60% 17%, 100% 15%, 100% 81%, 50% 100%, 0 79%, 0 15%);
+}
+
+.boxprize {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ececec;
+}
+
+.box2prize {
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.box2childprizze {
+  width: 60%;
+  height: 10%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+}
+
+.box2make {
+  z-index: 9;
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.box2 {
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.box2child {
+  width: 60%;
+  height: 10%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.box2childnoi {
+  width: 60%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.boxnoi {
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ececec;
+  -webkit-clip-path: polygon(50% 21%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+          clip-path: polygon(50% 21%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+}
+
+.box2noi2 {
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+  align-items: center;
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+}
+
+#tswlogo2 {
+  margin: auto;
+  margin-top: 100px;
+  height: 80px;
+  padding: 0%;
+}
+
+#tswlogo {
+  font-style: Roboto-Regular;
+  margin-top: 80px;
+  margin: auto;
+  height: 70px;
+  padding: 0%;
+}
+
+#para {
+  margin: auto;
+  width: 60%;
+  font-size: 16px;
+  line-height: 30px;
+  color: #707070;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 50px !important;
+}
+
+.coverbox2 {
+  position: absolute;
+  top: 75%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -ms-grid;
+  display: grid;
+}
+
+#orangeButton {
+  background: white;
+  color: #ff4400;
+  border-radius: 0;
+  border-color: grey;
+}
+
+#schtr {
+  padding: 10px;
+  margin: auto;
+}
+
+#schtd {
+  margin: 10px;
+  padding: 10px;
+}
+
+#prizebg {
+  height: 100px;
+  width: autos;
+}
+
+#resc {
+  width: 100%;
+  height: 50vh;
+}
+
+.coverbgimg {
+  height: 40vh;
+  width: auto;
+}
+
+.basebgimg {
+  height: 50vh;
+  width: auto;
+}
+
+.cuscont {
+  position: relative;
+  text-align: center;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+}
+
+.cuscont2 {
+  height: 70vh;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.cuscont2 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cuscent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cuscent2 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#przicon {
+  height: 100px;
+}
+
+#processItem {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin: "auto";
+  padding: 5px;
+}
+
+#bulletItems {
+  width: 70%;
+  margin: auto;
+}
+
+#clickButton {
+  border-radius: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: transparent;
+  font-weight: 600;
+  color: darkslategrey;
+  font-weight: 600;
+  border-color: #0093cc;
+}
+
+#buttonpair {
+  margin: auto;
+  float: left;
+  width: auto;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+#buttonpair2 {
+  margin: auto;
+  float: initial;
+  width: auto;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+  .sect {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .sectcomp {
+    height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sectchild div p {
+    font-size: 0.7rem;
+  }
+  #twoflex {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #twoflex #twoflex1 {
+    width: 40%;
+  }
+  #twoflex #twoflex1 div {
+    text-align: inherit;
+    float: right;
+    width: 100%;
+  }
+  #twoflex #twoflex1 div p {
+    font-size: 0.7rem;
+  }
+  #twoflex #twoflex2 {
+    width: 50%;
+  }
+  #twoflex #twoflex2 img {
+    margin: auto;
+    width: 100%;
+    float: left;
+  }
+  .maindiv {
+    height: 40vh;
+  }
+  .cuscont2 {
+    height: 40vh;
+  }
+  .coverbox2 {
+    margin-top: 80px;
+  }
+  .coverDiv {
+    width: 100%;
+    height: 20vh;
+  }
+  .box {
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    background: #ececec;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  #tswlogo {
+    margin-top: 70px;
+    height: 50px;
+  }
+  #para {
+    margin-top: 20px;
+    margin: auto;
+    width: 90%;
+    font-size: 0.7rem;
+  }
+  .coverbox2 {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    -webkit-transform: translate(-35%, -50%);
+            transform: translate(-35%, -50%);
+    display: -ms-grid;
+    display: grid;
+  }
+  #tsslogo {
+    height: 40px;
+  }
+  #sublogo {
+    height: 150px;
+    margin: 10px;
+  }
+  #sublogo {
+    height: 60px;
+  }
+  #CustomButtonBox {
+    padding: 0px;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 0.7rem;
+  }
+  .box2child {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  #resc {
+    height: 200px;
+    width: 100%;
+  }
+  #przicon {
+    margin-top: 10px;
+    height: 40px;
+  }
+  #prziconquote {
+    font-size: 0.6rem;
+  }
+  #prziconquotelast {
+    font-size: 0.3rem;
+  }
+  .coverbgimg {
+    height: 30vh;
+    width: auto;
+  }
+  #processItem {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin: "auto";
+    padding: 5px;
+    height: 130px;
+  }
+  #bulletItems tr td {
+    font-size: 0.7rem;
+  }
+  #clickButton {
+    border-radius: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.7rem;
+    background-color: transparent;
+    font-weight: 600;
+    color: darkslategrey;
+    font-weight: 600;
+    border-color: #0093cc;
+  }
+  #buttonpair {
+    margin: auto;
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .box2childnoi p {
+    font-size: 0.65rem;
+  }
+  #tswlogo2 {
+    margin: auto;
+    margin-top: 80px;
+    height: 60px;
+    padding: 0%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
