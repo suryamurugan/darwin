@@ -41,7 +41,7 @@ const Participate = () => {
             destiny to reach.
           </h4>
 
-          <i id='prziconquotelast'>-Swami Vivkeananda</i>
+          <i id='prziconquotelast'>- Swami Vivekananda</i>
         </div>
       </div>
       <TheBackground />
@@ -51,6 +51,13 @@ const Participate = () => {
   );
 };
 const TheBackground = () => {
+  var driveurl = "https://drive.google.com/file/d/1OMtZSUHfzxcNjZwzTnAOcmouEbzHcz1p/view";
+
+  const handleSubmit = () => {
+    
+    const win = window.open(driveurl, "_blank");
+    win.focus();
+  }
   return (
     <div style={{ background: "#ececec" }}>
       <div style={{ paddingTop: "40px" }}>
@@ -166,7 +173,7 @@ const TheBackground = () => {
 
         <div id='buttonpair'>
           {" "}
-          <Button id='clickButton'>Read the Brief</Button>{" "}
+          <Button id='clickButton'onClick={e=>handleSubmit()}>Download the Brief</Button>
           <Button id='clickButton'>Register Now</Button>{" "}
         </div>
 
@@ -184,6 +191,13 @@ const TheBackground = () => {
 };
 
 const Subbmission = () => {
+  var driveurl = "https://drive.google.com/file/d/1OMtZSUHfzxcNjZwzTnAOcmouEbzHcz1p/view";
+
+  const handleSubmit = () => {
+    
+    const win = window.open(driveurl, "_blank");
+    win.focus();
+  }
   return (
     <div>
       <div
@@ -464,7 +478,7 @@ const Subbmission = () => {
           </td>
         </tr>
         <div id='buttonpair2'>
-          <Button id='clickButton'>Read the Brief</Button>{" "}
+        <Button id='clickButton' onClick={e=>handleSubmit()}>Download the Brief</Button>
           <Button id='clickButton'>Register Now</Button>{" "}
         </div>
         <br></br>
@@ -489,6 +503,13 @@ const Subbmission = () => {
 };
 
 const Evaluation = () => {
+  var driveurl = "https://drive.google.com/file/d/1OMtZSUHfzxcNjZwzTnAOcmouEbzHcz1p/view";
+
+  const handleSubmit = () => {
+    
+    const win = window.open(driveurl, "_blank");
+    win.focus();
+  }
   return (
     <div>
       <div style={{ width: "70%", margin: "auto", marginTop: "150px" }}>
@@ -649,7 +670,7 @@ const Evaluation = () => {
 
         <div id='buttonpair2'>
           {" "}
-          <Button id='clickButton'>Read the Brief</Button>{" "}
+          <Button id='clickButton' onClick={e=>handleSubmit()}>Download the Brief</Button>
           <Button id='clickButton'>Register Now</Button>{" "}
         </div>
         <br />

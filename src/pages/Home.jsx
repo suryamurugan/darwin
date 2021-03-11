@@ -23,6 +23,7 @@ import reportWebVitals from "../reportWebVitals";
 import jury from "../temp/jury.png";
 import magic from "../temp/magic.svg";
 import tswemake from "../temp/tataSteel.png";
+import compbg from "../temp/compbg.jpg";
 import tstr from "../temp/tstr.png";
 import tsmss from "../temp/tsmss.png";
 import mainlogo from "../mainlogo.png";
@@ -31,8 +32,12 @@ import cover from "../temp/bcimg.png";
 import bullet from "../temp/bullet.svg";
 import prize from "../temp/prize_bg2.png";
 import prizeIcon from "../temp/prizes_icon.svg";
+import tsp from "../temp/tsp.png"
+import history from "../history"
 
 const Home = () => {
+
+  
   const myRef = useRef(null);
   const executeScroll = () =>
     myRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -40,9 +45,9 @@ const Home = () => {
   return (
     <div>
       <Cover2 />
-      <Cards />
+
       <About />
-      {/* <Button onClick={executeScroll}></Button> */}
+     
       <WeMake />
 
       <TataStruct />
@@ -50,18 +55,22 @@ const Home = () => {
       <NotionsOfIndia />
       <CompetitionBrief />
       <Participate />
-      {/* <Participate />
-      <CompetitionSchedule /> */}
-      {/* <div ref={myRef}>Element to scroll to</div> */}
-
-      {/* 
+      
+      <CompetitionSchedule /> 
+   
 
 
-<CompetitionSchedule /> */}
     </div>
   );
 };
 const Cover2 = () => {
+  var driveurl = "https://drive.google.com/file/d/1OMtZSUHfzxcNjZwzTnAOcmouEbzHcz1p/view";
+
+  const handleSubmit = () => {
+    
+    const win = window.open(driveurl, "_blank");
+    win.focus();
+  }
   return (
     <div className='maindiv'>
       <div className='container2'>
@@ -69,19 +78,21 @@ const Cover2 = () => {
           <img src={cover} alt='Snow'></img>
         </div>
         <div className='box2'>
-          <div className='coverbox2'>
-            <div style={{ float: "left", display: "grid" }}>
-              <img id='tsslogo' src={tsmss} />
-              <img id='sublogo' src={mainlogo} />
-              <div id='buttondivbox'>
-                {/* <Button id='CustomButtonBox'>Read the Brief</Button>
+        <div className='coverboximgcenter'> 
+        <img id='tsp' src={tsp} />
+        <div id='buttondivbox'>
+                <Button id='CustomButtonBox' onClick={e=>handleSubmit()}>Download the Brief</Button>
 
-                <Button id='CustomButtonBox'> Register Now</Button> */}
+                <Button id='CustomButtonBox'> Register Now</Button>
               </div>
-            </div>
-          </div>
+
         </div>
+        
+        </div>
+        
       </div>
+      <Cards />
+      
     </div>
   );
 };
@@ -121,31 +132,31 @@ const Cover = () => {
 
 const Cards = () => {
   return(
-    <div>
-      <div class="row">
-  <div class="column">
-    <div class="card">
+    <div className="overflow-card">
+      <div className="row" style={{marginRight:"0"}}>
+  <div className="column">
+    <div className="card">
     <img id='tswlogo' src={comp}></img>
       <p>Competition Brief</p>
     </div>
   </div>
 
-  <div class="column">
-    <div class="card">
+  <div className="column">
+    <div className="card">
     <img id='tswlogo' src={elecri}></img>
       <p>Eligibility Criteria</p>
     </div>
   </div>
   
-  <div class="column">
-    <div class="card column-active">
+  <div className="column">
+    <div className="card column-active">
     <img id='tswlogo' src={subg}></img>
       <p>Submission Guidelines</p>
     </div>
   </div>
   
-  <div class="column">
-    <div class="card">
+  <div className="column">
+    <div className="card">
     <img id='tswlogo' src={evalcri}></img>
       <p>Evaluation Criteria</p>
     </div>
@@ -160,7 +171,14 @@ const About = () => {
   return (
     <div className='sect'>
       <div className='sectchild'>
-        <div style={{ marginTop: "10px" }}>
+        <br/>
+
+        <br/>
+        <br/>
+        <br/>
+        
+
+        <div style={{ marginTop: "100px" }}>
           <h3 style={{ color: "#00124D", fontSize: "40px", margin: "92px 238px 5.4px", lineHeight: "0.75", letterSpacing: "0.56px", textAlign: "center", color: "#00124d" }}>ABOUT </h3>
         </div>
         <div style={{ display: "flex" }}>
@@ -182,8 +200,10 @@ const About = () => {
             </h4>
           </i>
           <br />
-          <i style={{ fontSize: "16px", lineHeight: "43px", letterSpacing: "0.22px", color: "#707070" }}>- Swami Vivkeananda</i>
+          <i style={{ fontSize: "16px", lineHeight: "43px", letterSpacing: "0.22px", color: "#707070" }}>-  Swami Vivekananda</i>
         </div>
+   
+        
       </div>
     </div>
   );
@@ -192,6 +212,12 @@ const About = () => {
 const WeMake = () => {
   return (
     <div className='maindivmake'>
+           <br/>
+
+<br/>
+<br/>
+<br/>
+
       <div className='container2'>
         <div className='box'></div>
         <div className='box2make'>
@@ -258,7 +284,7 @@ const NotionsOfIndia = () => {
               symbol/structure preferably using steel hollow sections along with
               other materials. The sculpture must signify the vision and journey
               of the nation into the future. The sculpture’s external dimensions
-              must be within the dimensional limits of 6 x 6 x 6 meters.
+              must be within the dimensional limits of 12 x 12 x 12 meters.
             </p>
           </div>
         </div>
@@ -276,7 +302,7 @@ const NotionsOfIndia = () => {
 
 const CompetitionBrief = () => {
   return (
-    <div className='sectcomp' style={{ background: "" }}>
+    <div className='sectcomp' style={{ background: "#f4f5f9" }}>
       <div className='sectnewchild'>
         <div style={{ marginTop: "10px" }}>
           <h3 style={{ color: "#00124d", fontWeight: "600", fontSize: "40px" }}>COMPETITION BRIEF </h3>
@@ -311,13 +337,14 @@ const CompetitionBrief = () => {
             nearly 64 per cent of its population is in the working age group,
             making it the youngest country in the world.
           </p>
-        </div>
-        <img src={compImage} style={{height: "700px", width: "600px", zIndex:"1", float: "right", display:"inline"}} />
-        <div>
+          <div>
           <Button id='orangeButton'>
             <b>Read More</b>
           </Button>
         </div>
+        </div>
+        <img src={compImage} style={{height: "700px", width: "600px", zIndex:"1", float: "right", display:"inline"}} />
+        
       </div>
   );
   //     <div>
@@ -350,8 +377,9 @@ const Participate = () => {
         <div style={{width: "1007px",
                     height: "68px",
                     margin:"auto",
+                    marginTop:"100px",
                     objectFit: "contain",
-                    fontFamily: "Roboto",
+              //      fontFamily: "Roboto",
                     fontSize: "40px",
                     fontWeight: "normal",
                     fontStretch: "normal",
@@ -439,7 +467,7 @@ const ParticipateCard = () => {
                           fontWeight: "normal",
                           fontStretch: "normal",
                           fontStyle: "normal",
-                          lineHeight: "1.88",
+                          lineHeight: "1.5",
                           letterSpacing: "0.22px",
                           textAlign: "center",
                           color: "#282828"}}>
@@ -488,7 +516,7 @@ const ParticipateCardTwo = () => {
                           fontWeight: "normal",
                           fontStretch: "normal",
                           fontStyle: "normal",
-                          lineHeight: "1.88",
+                          lineHeight: "1.5",
                           letterSpacing: "0.22px",
                           textAlign: "center",
                           color: "#282828"}}>
@@ -535,7 +563,7 @@ const ParticipateCardThree = () => {
                           fontWeight: "normal",
                           fontStretch: "normal",
                           fontStyle: "normal",
-                          lineHeight: "1.88",
+                          lineHeight: "1.3",
                           letterSpacing: "0.22px",
                           textAlign: "center",
                           color: "#282828"}}>
@@ -564,13 +592,13 @@ const CompetitionSchedule = () => {
     <div className='cuscont'>
       <img
         className='basebgimg'
-        src={prize}
+        src={compbg}
         alt='Snow'
-        style={{ width: "100%" }}
+        style={{ width: "100%",    objectFit: "cover" }}
       />
       <div className='cuscent2'>
         <div style={{ marginTop: "30px" }}>
-          <h3 style={{ color: "#00CCF8" }}>COMPETITION SCHEDULE </h3>
+          <h3 style={{ color: "#029bfd" }}>COMPETITION SCHEDULE </h3>
         </div>
         <div style={{ display: "flex" }}>
           <div
@@ -588,8 +616,10 @@ const CompetitionSchedule = () => {
         <div style={{ marginTop: "30px" }}>
           <table
             style={{
+              width:"800px",
               margin: "auto",
               padding: "10px",
+              
               background: "transparent",
             }}
           >

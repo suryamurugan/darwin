@@ -1,0 +1,138 @@
+.maindivregister {
+    margin: auto;
+    margin-top: 30px;
+    padding: 200px;
+    // table tr td {
+    //     text-align: end;
+    //     padding: 10px;
+    // }
+    table {
+        margin: auto;
+        tr {
+            // padding: 30px;
+            // margin-top: 100px;
+        }
+        #registerip {
+            width: 550px;
+            //font-size: 0.9rem;
+            text-align: end;
+            border-radius: 0;
+        }
+    }
+}
+
+#buttonpair {
+    margin: auto;
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+    // #CustomButtonBox {
+    //     background: rgba(0, 0, 0, 0.24);
+    //     border-radius: 0;
+    //     margin: 10px;
+    // }
+}
+
+#CustomButtonBoxSubmit {
+    border-radius: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #0093cc;
+    font-weight: 600;
+}
+
+#registerlabelbut {
+    margin-top: 100px;
+}
+
+#registergroup {
+    align-items: center;
+    //  background: red;
+    text-align: end;
+}
+
+#registerrowitem {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    // margin: 20px;
+}
+
+#registerlabel {
+    font-size: 0.9rem;
+    text-align: end;
+    border-radius: 0;
+}
+
+#registerinfo {
+    margin-top: 100px;
+    text-align: start;
+}
+
+#tslogoregister {
+    margin-top: 50px;
+}
+
+#noilogoregister {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+    .maindivregister {
+        margin: auto;
+        margin-top: 30px;
+        padding: 20px;
+        // table tr td {
+        //     text-align: end;
+        //     padding: 10px;
+        // }
+        table {
+            margin: auto;
+            margin-top: 80px;
+            tr {
+                // padding: 30px;
+                // margin-top: 100px;
+            }
+            #registerip {
+                width: 100%;
+                //font-size: 0.9rem;
+                text-align: end;
+                border-radius: 0;
+            }
+        }
+        #registerrowitem {
+            display: inline-flex;
+            flex-wrap: wrap;
+            margin: 0px;
+            width: 100%;
+            padding: 10px;
+        }
+    }
+    #registerinfo {
+        #tslogoregister {
+            height: 70px;
+        }
+        #noilogoregister {
+            margin-top: 30px;
+            height: 80px;
+        }
+        h5 {
+            font-size: 0.9rem;
+        }
+        #buttonpair {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .messenger {
+            padding-top: 3000px;
+            background: red;
+        }
+    }
+    #spinr {
+        margin-top: 150px;
+    }
+    #alertr {
+        margin-top: 100px;
+    }
+}

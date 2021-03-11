@@ -29,7 +29,7 @@ const Brief = () => {
             destiny to reach.
           </h4>
 
-          <i id='prziconquotelast'>-Swami Vivkeananda</i>
+          <i id='prziconquotelast'>- Swami Vivekananda</i>
         </div>
       </div>
       <TheBackground />
@@ -50,10 +50,10 @@ const TheBackground = () => {
       </div>
       <div style={{ display: "flex" }}>
         <div style={{ background: "#ececec", height: "1px", width: "40%" }}>
-          .
+          
         </div>
         <div style={{ background: "orange", height: "3px", width: "5%" }}>
-          .
+          
         </div>
         <div
           style={{ background: "#707070", height: "1px", width: "55%" }}
@@ -106,10 +106,10 @@ const TheRoadBlocks = () => {
           style={{ background: "#707070", height: "1px", width: "55%" }}
         ></div>
         <div style={{ background: "orange", height: "3px", width: "5%" }}>
-          .
+          
         </div>
         <div style={{ background: "white", height: "1px", width: "40%" }}>
-          .
+          
         </div>
       </div>
       <div id='bulletItems' style={{ width: "70%", margin: "auto" }}>
@@ -157,10 +157,10 @@ const TheSolution = () => {
       </div>
       <div style={{ display: "flex" }}>
         <div style={{ background: "white", height: "1px", width: "40%" }}>
-          .
+          
         </div>
         <div style={{ background: "orange", height: "3px", width: "5%" }}>
-          .
+          
         </div>
         <div
           style={{ background: "#707070", height: "1px", width: "55%" }}
@@ -262,10 +262,10 @@ const FromRtoR = () => {
           style={{ background: "#707070", height: "1px", width: "55%" }}
         ></div>
         <div style={{ background: "orange", height: "3px", width: "5%" }}>
-          .
+          
         </div>
         <div style={{ background: "white", height: "1px", width: "40%" }}>
-          .
+          
         </div>
       </div>
       <div id='bulletItems' style={{ width: "70%", margin: "auto" }}>
@@ -294,10 +294,10 @@ const CompetitionChallange = () => {
       </div>
       <div style={{ display: "flex" }}>
         <div style={{ background: "white", height: "1px", width: "40%" }}>
-          .
+          
         </div>
         <div style={{ background: "orange", height: "3px", width: "5%" }}>
-          .
+          
         </div>
         <div
           style={{ background: "#707070", height: "1px", width: "55%" }}

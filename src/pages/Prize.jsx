@@ -27,7 +27,7 @@ const Prize = () => {
             destiny to reach.
           </h4>
 
-          <i id='prziconquotelast'>-Swami Vivkeananda</i>
+          <i id='prziconquotelast'>-  Swami Vivekananda</i>
         </div>
       </div>
       <div style={{ margin: "50px" }}>To Be Announced.</div>

@@ -7,6 +7,22 @@ header {
     display: flex;
 }
 
+.twonav {
+    display: block;
+}
+
+.navparttwo {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    #navimgpart1 {
+        height: 100px;
+    }
+    #navimgpart2 {
+        height: 100px;
+    }
+}
+
 // #custnav {
 //     position: fixed;
 //     top: 0;
@@ -46,6 +62,7 @@ header {
     #twoflex1 {
         width: 50%;
         div {
+            text-align: right;
             float: right;
             width: 500px;
         }
@@ -53,6 +70,7 @@ header {
     #twoflex2 {
         width: 50%;
         img {
+            height: 100%;
             margin-left: 40px;
             float: left;
         }
@@ -156,6 +174,15 @@ header {
     margin: auto;
 }
 
+.sectnewchild {
+    width: 40%;
+    margin: 110px !important;
+}
+
+.setSubChild {
+    padding-top: 200px !important;
+}
+
 .maindiv {
     width: 100%;
     height: 70vh;
@@ -180,12 +207,13 @@ header {
 
 .maindivnoi {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
+    padding-bottom: 100px;
 }
 
 .container2noi {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     position: relative;
 }
 
@@ -275,6 +303,67 @@ header {
     //  background: blue;
 }
 
+#tsp {
+    margin: auto;
+    height: 200px;
+}
+
+.coverbox {
+    width: 356.5px;
+    height: 207.7px;
+    margin: 0 0 40.5px;
+    object-fit: contain;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+
+.row {
+    margin-left: 20% !important;
+    display: flex;
+    margin-top: -6rem;
+    margin-right: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    clear: both;
+}
+
+.column-active {
+    background-color: #0379fc !important;
+    color: white;
+    height: 213px !important;
+    margin-top: -1rem;
+}
+
+
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Style the counter cards */
+
+.card {
+    box-shadow: 3px 9px 10px 0 rgba(0, 0, 0, 0.16);
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    height: 193px;
+    width: 193px;
+    justify-content: space-between;
+}
+
 .box2child {
     // height: 100%;
     // margin: auto;
@@ -288,7 +377,7 @@ header {
     // list-style: none;
     // display: flex;
     width: 60%;
-    height: 10%;
+    height: 25%;
     //overflow: auto;
     margin: auto;
     position: absolute;
@@ -322,7 +411,7 @@ header {
 
 .boxnoi {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -358,15 +447,39 @@ header {
 }
 
 #para {
+    // margin: auto;
+    // width: 60%;
+    // font-size: 0.7rem;
     margin: auto;
     width: 60%;
-    font-size: 0.7rem;
+    font-size: 16px;
+    line-height: 30px;
+    color: #707070;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px !important;
+}
+
+.overflow-card {
+    margin-top: 154px;
+    margin-left: 90px;
+    // position: absolute;
+    // top: 82%;
+    // left: 25%;
+    // transform: translate(-50%, -50%);
 }
 
 .coverbox2 {
     position: absolute;
     top: 75%;
     left: 25%;
+    transform: translate(-50%, -50%);
+    display: grid;
+}
+
+.coverboximgcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     display: grid;
 }
@@ -446,6 +559,9 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    table {
+        font-size: 1rem;
+    }
 }
 
 #przicon {
@@ -507,7 +623,7 @@ header {
 
 @media only screen and (max-width: 700px) {
     .sect {
-        margin-top: 30px;
+        margin-top: 40px;
         margin-bottom: 30px;
     }
     .sectcomp {

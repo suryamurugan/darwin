@@ -56,7 +56,7 @@ const CustomFooter = ()=>{
                 <div className="icons">
                     
                 <a
-                    href="https://www.linkedin.com/company/sminnovations/"
+                    href="https://www.linkedin.com/showcase/tata-structura/"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -65,18 +65,40 @@ const CustomFooter = ()=>{
                     alt="linkedin"
                     />
                 </a>
-                <a
-                    href="https://twitter.com/sminnovations1"
+
+                {/* <img src="https://img.icons8.com/ios/64/000000/instagram-new--v1.png"/>
+                <img src="https://img.icons8.com/wired/64/000000/domain.png"/>
+                <img src="https://img.icons8.com/carbon-copy/100/000000/facebook-new.png"/>
+                 */}
+                 
+                  <a
+                    href="https://www.tatastructura.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <img
-                    src="https://img.icons8.com/ios-glyphs/24/ffffff/twitter.png"
-                    alt="twitter"
-                    />
+                  <img src="https://img.icons8.com/wired/64/ffffff/domain.png"/>
+                </a>
+
+                <a
+                    href="https://www.facebook.com/tatastructura"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                  <img src="https://img.icons8.com/carbon-copy/100/ffffff/facebook-new.png"/>
+                </a>
+
+            
+                
+
+                <a
+                    href="https://www.instagram.com/tatastructura/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                   <img src="https://img.icons8.com/ios/64/ffffff/instagram-new--v1.png"/>
                 </a>
                 <a
-                    href="https://www.youtube.com/channel/UCBcDR3lrT9oOhAc75PhL92A"
+                    href="https://www.youtube.com/results?search_query=Tata+Structura"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

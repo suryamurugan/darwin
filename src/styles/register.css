@@ -1,0 +1,119 @@
+.maindivregister {
+  margin: auto;
+  margin-top: 30px;
+  padding: 200px;
+}
+
+.maindivregister table {
+  margin: auto;
+}
+
+.maindivregister table #registerip {
+  width: 550px;
+  text-align: end;
+  border-radius: 0;
+}
+
+#buttonpair {
+  margin: auto;
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+}
+
+#CustomButtonBoxSubmit {
+  border-radius: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #0093cc;
+  font-weight: 600;
+}
+
+#registerlabelbut {
+  margin-top: 100px;
+}
+
+#registergroup {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: end;
+}
+
+#registerrowitem {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#registerlabel {
+  font-size: 0.9rem;
+  text-align: end;
+  border-radius: 0;
+}
+
+#registerinfo {
+  margin-top: 100px;
+  text-align: start;
+}
+
+#tslogoregister {
+  margin-top: 50px;
+}
+
+#noilogoregister {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+  .maindivregister {
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .maindivregister table {
+    margin: auto;
+    margin-top: 80px;
+  }
+  .maindivregister table #registerip {
+    width: 100%;
+    text-align: end;
+    border-radius: 0;
+  }
+  .maindivregister #registerrowitem {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0px;
+    width: 100%;
+    padding: 10px;
+  }
+  #registerinfo #tslogoregister {
+    height: 70px;
+  }
+  #registerinfo #noilogoregister {
+    margin-top: 30px;
+    height: 80px;
+  }
+  #registerinfo h5 {
+    font-size: 0.9rem;
+  }
+  #registerinfo #buttonpair {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  #registerinfo .messenger {
+    padding-top: 3000px;
+    background: red;
+  }
+  #spinr {
+    margin-top: 150px;
+  }
+  #alertr {
+    margin-top: 100px;
+  }
+}
+/*# sourceMappingURL=register.css.map */
